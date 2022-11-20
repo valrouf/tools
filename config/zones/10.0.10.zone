@@ -1,0 +1,17 @@
+$TTL     86400
+@     IN     SOA     mateo.local valentin@mateo.local (
+     0000000002;serial
+     21600;refresh
+     3600;retry
+     604800;expires
+     86400;TTL
+)
+
+;Entries : NS
+@     IN     NS     ns.mateo.local.
+
+
+;Entries : PTR
+3     IN     PTR     tools.mateo.local.
+3     IN     PTR     ns.mateo.local.
+4     IN     PTR     zabbix.mateo.local.

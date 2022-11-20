@@ -1,0 +1,20 @@
+$TTL     86400
+@     IN     SOA     mateo.local valentin@mateo.local (
+     0000000002;serial
+     21600;refresh
+     3600;retry
+     604800;expires
+     86400;TTL
+)
+
+;Entries : NS
+@     IN     NS     ns.mateo.local.
+
+;Entries : A
+;DNS/DHCP/cert authority/...
+ns         IN     A     10.0.10.3
+;Zabbix Server
+zabbix     IN     A     10.0.10.4
+
+;Entries : CNAME
+tools     IN     CNAME     tools.mateo.local.
